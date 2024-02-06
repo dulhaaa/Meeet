@@ -1,11 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Sen:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Sen:wght@500;600;700&display=swap');
 
-:root{
---color-primary: #013243;
---color-accent: #33eece;
---color-text: #99b0b9;
---text-body: 'Inter', sans-serif;
---text-heading: 'Sen', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@800&display=swap');
+:root {
+  --color-primary: #013243;
+  --color-accent: #32f5c8;
+  --color-text: #99b0b9;
+  --text-body: 'Inter', sans-serif;
+  --text-heading: 'Sen', sans-serif;
+}
+
+body {
+  background-color: var(--color-primary);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  padding-inline: 10rem;
+  padding-block-start: 5rem;
+  position: relative;
+}
+
+.text {
+  display: grid;
+  grid-template-rows: 1fr 100px 100px;
+  margin-block-start: 2rem;
+}
+
+.text-big > #t1 {
+  font-family: var(--text-heading);
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 67%;
+  font-size: 9em;
+  line-height: 0.9;
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
+  color: var(--color-accent);
+  z-index: 0;
+}
+
+.text-big > #t2 {
+  position: absolute;
+  font-family: var(--text-heading);
+  font-weight: 700;
+  font-size: 9em;
+  color: var(--color-accent);
+  margin-block-start: -1.35rem;
+  z-index: 2;
+}
+
+.text-small {
+  font-family: var(--text-body);
+  font-weight: 500;
+  font-size: 1.3em;
+  color: var(--color-text);
+  width: 40%;
+  margin-block-start: 2.5rem;
+}
+
+.text button {
+  width: 15vw;
+  height: 6vh;
+  border-radius: 5px;
+  border: hidden;
+  background-color: var(--color-accent);
+  font-family: var(--text-body);
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--color-primary);
+  cursor: pointer;
+  margin-block-start: 2rem;
+}
+
+.text button:active {
+  transform: scale(0.99);
+  box-shadow: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-block-start: 5rem;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo span {
+  /* display: inline-block; */
+  font-family: var(--text-body);
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.img .avatar1 {
+  position: absolute;
+  top: 45%;
+  left: 72.5%;
+  z-index: -2;
+}
+
+.img .avatar2 {
+  position: absolute;
+  top: 10%;
+  left: 70%;
+}
+
+.img .avatar3 {
+  position: absolute;
+  top: 15%;
+  left: 3.5%;
+  z-index: -2;
+}
+
+.img .avatar4 {
+  position: absolute;
+  top: 70%;
+  left: 61%;
+}
+
+.img .avatar5 {
+  position: absolute;
+  top: 16%;
+  left: 58%;
+  z-index: -2;
+}
+
+.img .avatar6 {
+  position: absolute;
+  top: 49%;
+  left: 46%;
+  z-index: 1;
 }
