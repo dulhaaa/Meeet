@@ -15,8 +15,6 @@ body {
   background-color: var(--color-primary);
   margin: 0;
   padding: 0;
-  max-width: 1536px;
-  max-height: 960px;
 }
 
 .container {
@@ -35,7 +33,6 @@ body {
   font-family: var(--text-heading);
   font-weight: 700;
   text-transform: capitalize;
-  width: 67%;
   font-size: clamp(9rem, 0.7861rem + 8.5561vw, 6rem);
   line-height: 0.9;
   margin-block-start: 2rem;
@@ -59,7 +56,6 @@ body {
   font-weight: 500;
   font-size: 1.3em;
   color: var(--color-text);
-  width: 40%;
   margin-block-start: 2.5rem;
 }
 
@@ -199,4 +195,61 @@ body {
 }
 @media screen and (min-width: 22.5em) and (max-width: 47em) {
   /* mobile */
+  .container {
+    padding-inline: 2rem;
+    padding-block-start: 1rem;
+  }
+
+  .text {
+    margin-block-start: 12rem;
+  }
+
+  .text-big :is(#t1, #t2) {
+    font-size: 4rem;
+  }
+  & #t2 {
+    padding-block-start: 0.6rem;
+  }
+
+  .text-small {
+    font-size: 1.5rem;
+  }
+
+  .text button {
+    width: 75vw;
+    height: 10vh;
+    margin-block-start: 4rem;
+  }
+
+  .logo {
+    margin-block-start: 18rem;
+  }
+
+  .img .avatar3 {
+    top: 13%;
+    left: 20%;
+  }
+
+  .img .avatar2 {
+    top: 13%;
+    z-index: -2;
+  }
+
+  .img .avatar6 {
+    top: 66%;
+    left: 66%;
+    z-index: -2;
+  }
+
+  .img .avatar1 {
+    display: none;
+  }
+
+  .img .avatar4 {
+    display: none;
+  }
+
+  .img .avatar5 {
+    display: none;
+  }
 }
